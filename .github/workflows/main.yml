@@ -30,6 +30,6 @@ jobs:
           node-version: 12
       
       - name: Installing Surge
-        run: npm install --gloval surge
+        run: npm install --global surge
       - name: deploying using surge
         run: surge ./bootcamp2020sample.surge.sh/ --token $ {{secrets.SURGE_TOKEN}}
